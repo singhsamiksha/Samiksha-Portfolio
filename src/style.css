@@ -1,0 +1,113 @@
+html { scroll-behavior: smooth; } 
+body{
+    background-color: #e5e7eb;
+    transition: background-color 0.5s linear;
+}
+
+body.dark{
+    background-color: rgb(20, 20, 20);
+}
+.card {
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 240px; 
+    height: 288px; /* Height of the image */
+  }
+
+  .card-inner-2{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 450px; 
+    height: 350px; 
+  }
+  
+  .card:hover .card-inner-2  {
+    transform: rotateY(180deg);
+  }
+
+  .card:hover .card-inner  {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back, .card-back-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    display: block;
+    padding: 90px 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+    color: black;
+  }
+
+  .card-back.dark, .card-back-2.dark{
+    background-color: rgb(20, 20, 20);
+    color: white;
+  }
+
+
+  .card-back-2 {
+    transform: rotateY(180deg);
+    display: block;
+    padding: 20px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+    color: black;
+  }
+
+  .icon-hover {
+    color: #0284c7;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon-hover:hover {
+    transform: scale(1.1);
+    color: #16a34a /* Change to a different color on hover */
+}
+
+  @media screen and (max-width:700px){
+    .card-inner-2 {
+        width: 260px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    
+      .card-back-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .card-back-2 p{
+        text-align: center;
+      } 
+      .card-front {
+        padding: 5px;
+      }
+  }
+
+
+  
+  
+
+ 

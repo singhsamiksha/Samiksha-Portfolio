@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Samiksha's Portfolio showcasing web development projects and skills.">
+        <meta name="keywords" content="Samiksha, Portfolio, Web Development">
+        <meta name="author" content="Samiksha">
+        <link rel="icon" href="./src/favicon.ico" type="image/x-icon">
+        <title>Samiksha's Portfolio</title>
+        <link href="./src/output.css" rel="stylesheet">
+        <link href="./src/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    </head>
+    
+<body id="home">
+    <!-- Header section with navigation bar, styled for both light and dark modes, includes developer title and navigation links. Adjusts layout for different screen sizes using Tailwind CSS classes. -->
+    <header class="bg-white text-sky-500 dark:bg-black p-4 dark:text-sky-500 text-xl font-bold">
+        <nav class="flex flex-col md:flex-row md:justify-between items-start md:items-center">
+            <div class="border p-3 shadow-md mb-4 md:mb-0">Developer</div>
+            <ul class="flex flex-col md:flex-row gap-7">
+                <a href="#home"><li class="text-sky-500 hover:text-black dark:text-sky-500 dark:hover:text-white">Home</li></a>
+                <a href="#about"><li class="text-sky-500 hover:text-black dark:text-sky-500 dark:hover:text-white">About</li></a>
+                <a href="#skill"><li class="text-sky-500 hover:text-black dark:text-sky-500 dark:hover:text-white">Skills</li></a>
+                <a href="#certificate"><li class="text-sky-500 hover:text-black dark:text-sky-500 dark:hover:text-white">Certifications</li></a>
+                <a href="#project"><li class="text-sky-500 hover:text-black dark:text-sky-500 dark:hover:text-white">Projects</li></a>
+                <a href="#contact"><li class="text-sky-500 hover:text-black dark:text-sky-500 dark:hover:text-white">Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Floating button that links to the home section, fixed at the bottom right of the screen. -->
+        <div class="absolute flex justify-end items-end">
+            <a href="#home" class="fixed right-5 bottom-20 bg-gray-200 dark:bg-customGray border border-none rounded-full z-10"><svg fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M256,5.333C114.88,5.333,0,117.76,0,256s114.88,250.667,256,250.667S512,394.24,512,256S397.12,5.333,256,5.333z M256,485.333C126.613,485.333,21.333,382.4,21.333,256S126.613,26.667,256,26.667S490.667,129.493,490.667,256 S385.387,485.333,256,485.333z"></path> <path d="M264.32,147.947c-4.053-4.587-10.987-5.013-15.573-0.96c-0.32,0.32-0.64,0.64-0.96,0.96L109.12,318.613 c-3.733,4.587-2.987,11.307,1.6,15.04s11.307,2.987,15.04-1.6L256,171.627l130.347,160.427c3.733,4.587,10.453,5.227,15.04,1.6 c4.587-3.733,5.227-10.453,1.6-15.04L264.32,147.947z"></path> </g> </g> </g> </g></svg></a>
+        </div>
+
+        <!-- Profile section showcasing personal information and social links -->
+        <section class="flex flex-col md:flex-row bg-white dark:bg-black justify-center items-center m-6 p-10 md:m-12 md:p-20 shadow-xl rounded-xl dark:shadow-gray-900">
+            <div class="card mb-8 md:mb-0 md:mr-8">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img id="img1" src="./src/IMG_4484 (1).jpg" alt="me" class="w-60 h-72 rounded-md border-2 p-2 border-sky-600 dark:border-white">
+                    </div>
+                    <div class="card-back ">
+                        <p>Name: Samiksha</p>
+                        <p>Age: 23</p>
+                        <p>Gender: Female</p>
+                        <p>Location: New Delhi, India</p>
+                    </div>
+                </div>
+            </div>
+            <article class="font-sans m-3 p-4 text-center md:text-left">
+                <h1 class="font-bold text-2xl md:text-6xl text-sky-600 animate-bounce m-1 p-1 md:m-2 md:p-2">Hey, It's Samiksha!</h1>
+                <p class="m-1 p-1 md:m-2 md:p-2 md:text-lg text-black dark:text-white">A passionate developer dedicated to crafting exceptional digital experiences through code and creativity. With a focus on innovation and efficiency, I specialize in turning ideas into robust web applications and software solutions.</p>
+                <a href="./src/Samiksha_Resume.pdf" download>
+                    <button class="bg-sky-600 m-2 p-2 rounded-xl text-white hover:bg-sky-500 hover:scale-105">Download Resume</button>
+                </a>
+                <ul class="flex justify-center md:justify-end gap-4 mt-4 sm:text-3xl">
+                    <li class="m-2">
+                        <address>
+                            <a href="mailto:singhsamiksha877@gmail.com" class="icon-hover">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </address>
+                    </li>
+                    <li class="m-2">
+                        <a href="https://github.com/singhsamiksha" target="_blank" class="icon-hover">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="m-2">
+                        <a href="https://x.com/Samiksha7337833" target="_blank" class="icon-hover">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="m-2">
+                        <a href="https://www.linkedin.com/in/samiksha-1099691ab/" target="_blank" class="icon-hover">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        
+        <!-- About Me section providing an overview of my background and interests -->
+        <section id="about" class="bg-white dark:bg-black m-6 p-7 md:m-12 md:p-10 shadow-xl rounded-xl dark:shadow-gray-900">
+            <article class="flex flex-col justify-center items-center">
+                <h2 class="font-bold text-2xl md:text-5xl text-sky-600 m-2 p-2">About Me</h2>
+                <img src="./src/me.jpg" alt="me" class="w-40 h-40 m-5 rounded-full border-2 p-2 border-sky-500">
+                <p class="m-2 p-2 md:text-lg text-black dark:text-white">
+                    Welcome to my portfolio! I'm Samiksha, a passionate and innovative developer from Delhi with a keen interest in creating impactful digital solutions. With a strong background in web development and a focus on building user-friendly and efficient applications, I thrive on turning complex problems into elegant solutions. I completed my graduation in 2022 from Netaji Subhas Institute of Technology, Delhi, under Delhi University, with a first division. 
+                    <span id="more-text" style="display: none;">I believe in continuous learning and staying ahead of industry trends to deliver state-of-the-art solutions. My approach is customer-centric, ensuring that each project not only meets but exceeds client expectations. Collaboration and communication are key in my process, and I thrive in dynamic environments where I can contribute and grow alongside my team. I am always excited to take on new challenges and collaborate on innovative projects. Whether you’re looking to develop a custom web application or integrate AI into your existing systems, feel free to reach out!
+                        Beyond my technical expertise, I have a deep appreciation for art and music, which fuel my creativity and inspire my work. With strong problem-solving skills and a passion for innovation, I am committed to delivering exceptional results and making a meaningful impact through technology.
+                    </span>
+                </p>
+                <button id="read-more-btn" class="bg-sky-600 m-2 p-2 rounded-xl text-white hover:bg-sky-500 hover:scale-105">Read More</button>
+            </article>
+        </section>     
+
+        <!-- Skills section showcasing my expertise and proficiency levels -->
+        <section id="skill" class="bg-white dark:bg-black m-6 p-10 md:m-12 md:p-20 shadow-xl rounded-xl dark:shadow-gray-900">
+            <h2 class="font-bold text-2xl md:text-5xl text-sky-600 m-2 p-2 flex justify-center">My Skills</h2>
+            <article class="flex flex-wrap gap-28 m-10 justify-evenly">
+                <div class="flex flex-col justify-start items-center">
+                    <div class="relative size-40">
+                        <svg class="size-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-gray-600" stroke-width="2"></circle>
+                        <g class="origin-center -rotate-90 transform">
+                            <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-sky-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="8.0384"></circle>
+                        </g>
+                        </svg>
+                        <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                        <span class="text-center text-2xl font-bold text-black dark:text-white">92%</span>
+                        </div>
+                    </div>
+                    <p class="text-black dark:text-white m-3 md:text-lg">Creative</p>
+                </div>  
+                <div class="flex flex-col justify-start items-center">
+                    <div class="relative size-40">
+                        <svg class="size-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-gray-600" stroke-width="2"></circle>
+                        <g class="origin-center -rotate-90 transform">
+                            <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-sky-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="22.1056"></circle>
+                        </g>
+                        </svg>
+                        <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                        <span class="text-center text-2xl font-bold text-black dark:text-white">78%</span>
+                        </div>
+                    </div>
+                    <p class="text-black dark:text-white m-3 md:text-lg">Team Player</p>
+                </div>
+                <div class="flex flex-col justify-start items-center">
+                    <div class="relative size-40">
+                        <svg class="size-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-gray-600" stroke-width="2"></circle>
+                        <g class="origin-center -rotate-90 transform">
+                            <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-sky-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="15.072"></circle>
+                        </g>
+                        </svg>
+                        <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                        <span class="text-center text-2xl font-bold text-black dark:text-white">85%</span>
+                        </div>
+                    </div>
+                    <p class="text-black dark:text-white m-3 md:text-lg">Problem Solving</p>
+                </div>
+                <div class="flex flex-col justify-start items-center">
+                    <div class="relative size-40">
+                        <svg class="size-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-gray-600" stroke-width="2"></circle>
+                        <g class="origin-center -rotate-90 transform">
+                            <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-sky-600" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="20.096"></circle>
+                        </g>
+                        </svg>
+                        <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                        <span class="text-center text-2xl font-bold text-black dark:text-white">80%</span>
+                        </div>
+                    </div>
+                    <p class="text-black dark:text-white m-3 md:text-lg">Communication</p>
+                </div>  
+            </article>
+            <article>
+                <div class="space-y-5">
+                    <div>
+                      <div class="mb-2 flex justify-between items-center">
+                        <h3 class="text-sm font-semibold text-black dark:text-white md:text-lg">Java</h3>
+                        <span class="text-sm text-black dark:text-white md:text-lg">78%</span>
+                      </div>
+                      <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 78%"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="mb-2 flex justify-between items-center">
+                        <h3 class="text-sm font-semibold text-black dark:text-white md:text-lg">HTML</h3>
+                        <span class="text-sm text-black dark:text-white md:text-lg">95%</span>
+                      </div>
+                      <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 95%"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="mb-2 flex justify-between items-center">
+                        <h3 class="text-sm font-semibold text-black dark:text-white md:text-lg">CSS and TailwindCSS</h3>
+                        <span class="text-sm text-black dark:text-white md:text-lg">81%</span>
+                      </div>
+                      <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 81%"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="mb-2 flex justify-between items-center">
+                        <h3 class="text-sm font-semibold text-black dark:text-white md:text-lg">JavaScript</h3>
+                        <span class="text-sm text-black dark:text-white md:text-lg">68%</span>
+                      </div>
+                      <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 68%"></div>
+                      </div>
+                    </div>
+                    <div>
+                        <div class="mb-2 flex justify-between items-center">
+                          <h3 class="text-sm font-semibold text-black dark:text-white md:text-lg">Git and Github</h3>
+                          <span class="text-sm text-black dark:text-white md:text-lg">90%</span>
+                        </div>
+                        <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                          <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 90%"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mb-2 flex justify-between items-center">
+                          <h3 class="text-sm font-semibold text-black dark:text-white md:text-lg">ReactJS</h3>
+                          <span class="text-sm text-black dark:text-white md:text-lg">65%</span>
+                        </div>
+                        <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                          <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 65%"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mb-2 flex justify-between items-center">
+                          <h3 class="text-sm font-semibold text-black dark:text-white md:text-lg">Nodejs</h3>
+                          <span class="text-sm text-black dark:text-white md:text-lg">60%</span>
+                        </div>
+                        <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                          <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 60%"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="mb-2 flex justify-between items-center">
+                          <h3 class="text-sm font-semibold text-black dark:text-white md:text-lg">Data Structures and Algorithms</h3>
+                          <span class="text-sm text-black dark:text-white md:text-lg">75%</span>
+                        </div>
+                        <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                          <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 75%"></div>
+                        </div>
+                      </div>
+                  </div>
+            </article>
+        </section>  
+
+        <!-- Certifications section highlighting my achievements and qualifications -->
+        <section id="certificate" class="bg-white dark:bg-black m-6 p-7 md:m-12 md:p-14 shadow-xl rounded-xl dark:shadow-gray-900">
+            <h2 class="font-bold text-2xl md:text-5xl text-sky-600 m-4 p-2 flex justify-center">Certifications</h2>
+            <div class="flex flex-col lg:flex-row gap-8 m-3 p-2 justify-evenly">
+                <article class="bg-gray-200 dark:bg-customGray flex-grow-1 rounded-2xl text-black dark:text-white p-4 flex flex-col gap-4 justify-center items-center hover:scale-110 hover:shadow-2xl hover:border">
+                    <h3 class="text-sky-600 text-xl md:text-2xl">Full Stack Development</h3>
+                    <p md:text-lg>I am currently enrolled in a comprehensive full stack development course through Internshala in 2024. The program covers front-end technologies like HTML, CSS, and JavaScript, including modern frameworks such as React. Additionally, it delves into back-end development using Node.js, aiming to provide a thorough grasp of full stack development. The course is designed to equip me with the necessary skills to create dynamic and responsive web applications independently.</p>
+                    <a href="./src/Full Stack Development_ Let's begin Training - Certificate of Completion.pdf" target="_blank"><button class="bg-sky-600 m-2 p-2 rounded-xl text-white hover:bg-sky-500 hover:scale-105">View Certificate</button></a>
+                </article>
+                <article class="bg-gray-200 dark:bg-customGray flex-grow-1 rounded-2xl text-black dark:text-white p-4 flex flex-col gap-4 justify-center items-center hover:scale-110 hover:shadow-2xl hover:border">
+                    <h3 class="text-sky-600 text-xl md:text-2xl">Data Structures</h3>
+                    <p md:text-lg>I completed a comprehensive course on Data Structures and Algorithms from Coding Ninjas in 2020. The course covered essential topics including arrays, linked lists, stacks, queues, trees, graphs, sorting algorithms, and dynamic programming, all taught using the programming language C++. This training built a robust foundation in computer science principles and significantly bolstered problem-solving abilities.</p>
+                    <a href="./src/coding ninja certificate.pdf" target="_blank"><button class="bg-sky-600 m-2 p-2 rounded-xl text-white hover:bg-sky-500 hover:scale-105">View Certificate</button></a>
+                </article>
+                <article class="bg-gray-200 dark:bg-customGray flex-grow-1 rounded-2xl text-black dark:text-white p-4 flex flex-col gap-4 justify-center items-center hover:scale-110 hover:shadow-2xl hover:border">
+                    <h3 class="text-sky-600 text-xl md:text-2xl">Community Service</h3>
+                    <p md:text-lg>In 2019, I was honored with a letter of appreciation from the Dean for my impactful social work under PRAYAS: The Neighbourhood Project. I actively organized and participated in community activities aimed at enhancing local lives, demonstrating leadership, compassion, and a strong commitment to social responsibility. This experience profoundly influenced my dedication to making positive changes within our community.</p>
+                    <a href="./src/NETAJI SUBHAS UNIVERSITY OF TECHNOLOGY.pdf" target="_blank"><button class="bg-sky-600 m-2 p-2 rounded-xl text-white hover:bg-sky-500 hover:scale-105">View Certificate</button></a>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Projects section showcasing my completed projects -->
+        <section id="project" class="bg-white dark:bg-black m-6 p-7 md:m-12 md:p-14 shadow-xl rounded-xl dark:shadow-gray-900">
+            <h2 class="font-bold text-2xl md:text-5xl text-sky-600 m-4 p-2 flex justify-center mb-10">Projects</h2>  
+            <div class="flex flex-wrap gap:2 md:gap-20 text-white justify-evenly">
+                <article>
+                    <div class="card flex justify-center items-center">
+                        <div class="card-inner-2">
+                          <div class="card-front bg-gray-200 dark:bg-customGray flex justify-center items-center p-10">
+                             <svg height="150px" width="150px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#0284c7;} </style> <g> <path class="st0" d="M449.532,105.602L288.463,8.989C278.474,2.994,267.235,0,150.011,0c-11.239,0-22.483,2.994-32.467,8.989 L62.475,105.602c-19.012,11.406-30.647,31.95-30.647,54.117v192.562c0,22.168,11.635,42.711,30.647,54.117l161.069,96.613 c9.984,5.988,21.228,8.989,32.467,8.989c11.225,0,22.463-3.001,32.452-8.989l161.069-96.613 c19.012-11.406,30.64-31.949,30.64-54.117V159.719C480.172,137.552,468.544,117.008,449.532,105.602z M250.599,492.733 c-6.029-0.745-11.93-2.719-17.32-5.948L72.21,390.172c-13.306-7.989-21.456-22.369-21.456-37.891V159.719 c0-6.022,1.236-11.862,3.518-17.233l196.328,117.76V492.733z M59.669,133.114c3.364-4.464,7.593-8.318,12.541-11.285 l161.069-96.613c6.995-4.196,14.85-6.291,22.732-6.291c7.868,0,15.723,2.095,22.718,6.291l161.069,96.613 c4.941,2.967,9.184,6.821,12.54,11.285L150.011,250.881L59.669,133.114z M461.254,352.281c0,15.522-8.15,29.902-21.456,37.891 l-161.069,96.613c-5.398,3.229-11.292,5.203-17.321,5.948V260.246l196.328-117.76c2.283,5.37,3.518,11.211,3.518,17.233V352.281z"></path> <path class="st0" d="M160.209,119.875c-9.828-7.278-26.021-7.465-36.165-0.41c-10.144,7.056-10.399,18.67-0.57,25.947 c9.828,7.277,26.022,7.459,36.159,0.41C169.783,138.766,170.038,127.152,160.209,119.875z"></path> <path class="st0" d="M279.159,48.686c-9.829-7.277-26.022-7.458-36.172-0.403c-10.137,7.049-10.393,18.664-0.564,25.941 c9.829,7.284,26.022,7.458,36.159,0.416C288.732,67.578,288.987,55.963,279.159,48.686z"></path> <path class="st0" d="M220.59,82.024c-9.834-7.27-26.028-7.458-36.172-0.403c-10.15,7.049-10.406,18.664-0.571,25.941 c9.829,7.284,26.022,7.458,36.166,0.416C230.151,100.916,230.412,89.302,220.59,82.024z"></path> <path class="st0" d="M267.437,184.754c-9.828-7.277-26.015-7.459-36.159-0.41c-10.15,7.056-10.405,18.671-0.577,25.947 c9.828,7.284,26.021,7.459,36.172,0.41C277.01,203.645,277.265,192.031,267.437,184.754z"></path> <path class="st0" d="M386.385,113.564c-9.828-7.271-26.021-7.458-36.158-0.403c-10.151,7.049-10.406,18.664-0.577,25.941 c9.828,7.284,26.02,7.458,36.172,0.416C395.959,132.456,396.214,120.842,386.385,113.564z"></path> <path class="st0" d="M327.817,146.903c-9.829-7.27-26.022-7.458-36.172-0.403c-10.137,7.049-10.392,18.664-0.564,25.941 c9.828,7.284,26.021,7.465,36.158,0.416C337.391,165.795,337.646,154.188,327.817,146.903z"></path> <path class="st0" d="M89.289,248.303c11.158,6.083,20.194,1.961,20.194-9.19c0-11.158-9.036-25.128-20.194-31.21 c-11.157-6.083-20.207-1.967-20.207,9.19C69.081,228.244,78.131,242.221,89.289,248.303z"></path> <path class="st0" d="M202.061,309.771c11.158,6.082,20.208,1.967,20.208-9.184c0-11.157-9.05-25.135-20.208-31.217 c-11.15-6.076-20.194-1.961-20.194,9.198C181.867,289.719,190.911,303.689,202.061,309.771z"></path> <path class="st0" d="M89.289,361.082c11.158,6.076,20.194,1.967,20.194-9.19c0-11.158-9.036-25.129-20.194-31.21 c-11.157-6.083-20.207-1.968-20.207,9.19C69.081,341.029,78.131,355,89.289,361.082z"></path> <path class="st0" d="M202.061,422.55c11.158,6.082,20.208,1.967,20.208-9.191c0-11.151-9.05-25.128-20.208-31.21 c-11.15-6.076-20.194-1.961-20.194,9.19C181.867,402.497,190.911,416.468,202.061,422.55z"></path> <path class="st0" d="M145.675,335.424c11.158,6.082,20.201,1.967,20.201-9.191c0-11.151-9.044-25.128-20.201-31.204 c-11.158-6.082-20.201-1.967-20.201,9.185C125.474,315.37,134.517,329.341,145.675,335.424z"></path> <path class="st0" d="M418.341,207.902c-11.158,6.082-20.208,20.053-20.208,31.21c0,11.151,9.05,15.273,20.208,9.19 c11.144-6.082,20.194-20.059,20.194-31.21C438.535,205.935,429.486,201.819,418.341,207.902z"></path> <path class="st0" d="M305.555,382.149c-11.158,6.082-20.194,20.059-20.194,31.21c0,11.158,9.036,15.273,20.194,9.191 c11.158-6.082,20.194-20.053,20.194-31.211C325.749,380.188,316.714,376.074,305.555,382.149z"></path> <path class="st0" d="M361.948,295.028c-11.158,6.076-20.207,20.053-20.207,31.204c0,11.158,9.05,15.273,20.207,9.191 c11.158-6.083,20.194-20.053,20.194-31.21C382.142,293.062,373.106,288.947,361.948,295.028z"></path> </g> </g></svg>                        </div>
+                          <div class="card-back-2">
+                            <h3 class="text-blue-600 font-bold text-xl">Magical Arena</h3>
+                            <p>"Magical Arena" is a Java console game where players battle using health, strength, and attack attributes. They roll dice to attack and defend, aiming to reduce opponents' health to zero. Fast-paced and strategic, it ends when a player's health depletes.</p>
+                            <div class="hidden md:block mt-2">
+                               <div class="mb-2 flex justify-between items-center">
+                                 <h3 class="text-sm font-semibold text-black dark:text-white">Java</h3>
+                                 <span class="text-sm text-black dark:text-white">100%</span>
+                               </div>
+                               <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 100%"></div>
+                               </div>
+                             </div>
+                             <div class="flex justify-center items-center">
+                                <button class="bg-sky-600 border rounded-full border-none p-2 m-3 flex justify-center items-center"><a href="https://github.com/singhsamiksha/Magical-Arena" target="_blank">Code 🔗</a></button>
+                               </div>
+                          </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card flex justify-center items-center">
+                        <div class="card-inner-2">
+                          <div class="card-front bg-gray-200 dark:bg-customGray flex justify-center items-center p-5">
+                            <svg width="150px" height="150px" viewBox="0 0 48 48" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style> .cls-1 { fill: none; stroke:#0284c7; stroke-linecap: round; stroke-linejoin: round; } </style> </defs> <line class="cls-1" x1="12.62" y1="24.31" x2="17.94" y2="11.42"></line> <line class="cls-1" x1="23.04" y1="24.35" x2="17.94" y2="11.42"></line> <line class="cls-1" x1="21.34" y1="20.02" x2="14.39" y2="20.02"></line> <g> <line class="cls-1" x1="32.63" y1="25.38" x2="39.35" y2="25.38"></line> <path class="cls-1" d="M35.68,25.38c0,4.34-5.29,11.51-10.59,12.61"></path> <path class="cls-1" d="M27.93,32.79c2.13,2.4,5.61,4.74,8.82,5.2"></path> </g> <rect class="cls-1" x="5.5" y="5.5" width="24.67" height="24.67" rx="3.64" ry="3.64"></rect> <path class="cls-1" d="M17.83,30.17v8.69c0,2,1.64,3.64,3.64,3.64h17.38c2,0,3.64-1.64,3.64-3.64V21.47c0-2-1.64-3.64-3.64-3.64h-8.69"></path> </g></svg>
+                          </div>                              
+                          <div class="card-back-2">
+                            <h3 class="text-blue-600 font-bold text-xl">API Translation</h3>
+                            <p>This is a simple Spring Boot application that provides translation services using the Google Cloud Translation API.</p>
+                            <div class="hidden md:block mt-2">
+                               <div class="mb-2 flex justify-between items-center">
+                                 <h3 class="text-sm font-semibold text-black dark:text-white">Java</h3>
+                                 <span class="text-sm text-black dark:text-white">80%</span>
+                               </div>
+                               <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 80%"></div>
+                               </div>
+                             </div>
+                             <div class="hidden md:block mt-2">
+                                <div class="mb-2 flex justify-between items-center">
+                                  <h3 class="text-sm font-semibold text-black dark:text-white">Spring Boot</h3>
+                                  <span class="text-sm text-black dark:text-white">20%</span>
+                                </div>
+                                <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 20%"></div>
+                                </div>
+                              </div>
+                             <div class="flex justify-center items-center">
+                                <button class="bg-sky-600 border rounded-full border-none p-2 m-3 flex justify-center items-center"><a href="https://github.com/singhsamiksha/Translation-API" target="_blank">Code 🔗</a></button>
+                               </div>
+                          </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card flex justify-center items-center">
+                        <div class="card-inner-2">
+                          <div class="card-front bg-gray-200 dark:bg-customGray flex justify-center items-center p-5">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" width="150px" height="150px" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <line fill="none" stroke="#0284c7" stroke-width="2" stroke-miterlimit="10" x1="15" y1="16" x2="28" y2="16"></line> <polyline fill="none" stroke="#0284c7" stroke-width="2" stroke-miterlimit="10" points="5,16 7,18 11,14 "></polyline> <line fill="none" stroke="#0284c7" stroke-width="2" stroke-miterlimit="10" x1="15" y1="8" x2="28" y2="8"></line> <polyline fill="none" stroke="#0284c7" stroke-width="2" stroke-miterlimit="10" points="5,8 7,10 11,6 "></polyline> <line fill="none" stroke="#0284c7" stroke-width="2" stroke-miterlimit="10" x1="15" y1="24" x2="28" y2="24"></line> <polyline fill="none" stroke="#0284c7" stroke-width="2" stroke-miterlimit="10" points="5,24 7,26 11,22 "></polyline> </g></svg>
+                          </div>                              
+                          <div class="card-back-2">
+                            <h3 class="text-blue-600 font-bold text-xl">Task Generator</h3>
+                            <p>It will generate a random task on the basis of user's preferred programming language and experience.</p>
+                            <div class="hidden md:block mt-2">
+                               <div class="mb-2 flex justify-between items-center">
+                                 <h3 class="text-sm font-semibold text-black dark:text-white">Java</h3>
+                                 <span class="text-sm text-black dark:text-white">100%</span>
+                               </div>
+                               <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 100%"></div>
+                               </div>
+                             </div>
+                             <div class="flex justify-center items-center">
+                                <button class="bg-sky-600 border rounded-full border-none p-2 m-3 flex justify-center items-center"><a href="https://github.com/singhsamiksha/TaskGenerator" target="_blank">Code 🔗</a></button>
+                               </div>
+                          </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card flex justify-center items-center">
+                        <div class="card-inner-2">
+                          <div class="card-front bg-gray-200 dark:bg-customGray flex justify-center items-center p-5">
+                            <svg width="150px" height="150px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.5909 1.75C12.6209 1.75 10.2109 4.16 10.2109 7.13C10.2109 10.1 12.6209 12.51 15.5909 12.51C18.5609 12.51 20.9709 10.1 20.9709 7.13C20.9709 4.16 18.5609 1.75 15.5909 1.75Z" fill="#0284c7"></path> <path d="M6.3593 13.0312C4.5293 13.0312 3.0293 14.5213 3.0293 16.3613C3.0293 18.2013 4.5193 19.6913 6.3593 19.6913C8.1893 19.6913 9.6893 18.2013 9.6893 16.3613C9.6893 14.5213 8.1893 13.0312 6.3593 13.0312Z" fill="#0284c7"></path> <path d="M16.6205 16.6211C15.0705 16.6211 13.8105 17.8811 13.8105 19.4311C13.8105 20.9811 15.0705 22.2411 16.6205 22.2411C18.1705 22.2411 19.4305 20.9811 19.4305 19.4311C19.4305 17.8811 18.1705 16.6211 16.6205 16.6211Z" fill="#0284c7"></path> </g></svg>
+                          </div>                              
+                          <div class="card-back-2">
+                            <h3 class="text-blue-600 font-bold text-xl">Bubble Game</h3>
+                            <p>It is a game of bubbles and arrow, When we click on bubble the arrow will start approching the  bubble, If the arrow touches the surface of bubble the game is over.</p>
+                            <div class="hidden md:block mt-2">
+                               <div class="mb-2 flex justify-between items-center">
+                                 <h3 class="text-sm font-semibold text-black dark:text-white">JavaScript</h3>
+                                 <span class="text-sm text-black dark:text-whitetext-white">71.3%</span>
+                               </div>
+                               <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 71.3%"></div>
+                               </div>
+                             </div>
+                             <div class="hidden md:block mt-2">
+                                <div class="mb-2 flex justify-between items-center">
+                                  <h3 class="text-sm font-semibold text-black dark:text-white">HTML</h3>
+                                  <span class="text-sm text-black dark:text-white">15.2%</span>
+                                </div>
+                                <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 15.2%"></div>
+                                </div>
+                              </div>
+                              <div class="hidden md:block mt-2">
+                                <div class="mb-2 flex justify-between items-center">
+                                  <h3 class="text-sm font-semibold text-black dark:text-white">CSS</h3>
+                                  <span class="text-sm text-black dark:text-white">13.5%</span>
+                                </div>
+                                <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 13.5%"></div>
+                                </div>
+                              </div>
+                             <div class="flex justify-center items-center">
+                                <button class="bg-sky-600 border rounded-full border-none p-2 m-3 flex justify-center items-center"><a href="https://github.com/singhsamiksha/BubbleApp" target="_blank">Code 🔗</a></button>
+                               </div>
+                          </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card flex justify-center items-center">
+                        <div class="card-inner-2">
+                          <div class="card-front bg-gray-200 dark:bg-customGray flex justify-center items-center p-5">
+                            <svg width="150px" height="150px" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_2_1367)"> <path d="M37 23.501V25.501H9V15.501C9 15.251 9.094 15.01 9.26 14.827L9.35 14.74L15.704 9.29901C16.409 8.69501 17.429 8.66001 18.171 9.19301L18.307 9.29901L24.651 14.741C24.841 14.904 24.962 15.131 24.992 15.376L25 15.501V23.501M17.005 10.818L11 15.96V23.501H14V18.501C14 17.988 14.386 17.565 14.883 17.508L15 17.501H19C19.513 17.501 19.936 17.886 19.993 18.383L20 18.501V23.501H23V15.96L17.005 10.818ZM18 19.501H16V23.501H18V19.501Z" fill="#0284c7"></path> <path d="M31.011 25.037H33.038L33.026 8.5H30.998L31.011 25.037Z" fill="#0284c7"></path> <path d="M31.313 13.332C30.391 14.127 28.848 14.741 27.307 14.795L27.021 14.8V12.8C29.335 12.8 30.564 11.522 30.954 9.589L30.975 9.46C30.989 9.352 30.997 9.236 31.001 9.124L30.997 9.031L31.001 8.759L30.999 8.5" fill="#0284c7"></path> <path d="M32.65 13.273C33.629 14.117 35.305 14.799 36.983 14.799V12.799L36.748 12.796C34.586 12.712 33.426 11.456 33.05 9.589L33 9.369H32.227L32.65 13.273Z" fill="#0284c7"></path> <path d="M32.703 14.996L31 15.084L30.97 15.268C30.612 16.58 29.414 17.5 27.02 17.5V19.5L27.326 19.496C28.849 19.451 30.076 19.07 31.001 18.446L32.328 17.159L32.703 14.996Z" fill="#0284c7"></path> <path d="M33 18.446C33.986 19.112 35.316 19.5 36.981 19.5V17.5L36.72 17.496C34.499 17.431 33.367 16.533 33.022 15.27L32.123 15.386L31.289 17.293L33 18.446Z" fill="#0284c7"></path> <mask id="mask0_2_1367" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-17" y="-18" width="80" height="80"> <path d="M63 -18H-17V62H63V-18Z" fill="#F2DDBB"></path> </mask> <g mask="url(#mask0_2_1367)"> <path d="M4.959 27.875C6.078 27.876 7.16 28.286 7.975 29.051C8.365 29.416 8.876 29.635 9.419 29.679L9.625 29.687V31.687C8.506 31.687 7.424 31.276 6.608 30.511C6.17 30.1 5.578 29.875 4.959 29.875C4.339 29.875 3.747 30.1 3.309 30.511C2.493 31.276 1.411 31.687 0.292 31.687C-0.747 31.687 -1.755 31.333 -2.546 30.67L-2.725 30.511C-3.164 30.1 -3.755 29.875 -4.375 29.875C-4.995 29.875 -5.586 30.1 -6.024 30.511C-6.84 31.276 -7.923 31.687 -9.042 31.687C-10.161 31.687 -11.243 31.276 -12.059 30.511C-12.497 30.1 -13.088 29.875 -13.708 29.875C-14.328 29.875 -14.919 30.1 -15.358 30.511C-16.116 31.221 -17.103 31.627 -18.136 31.681L-18.375 31.687V29.687C-17.824 29.687 -17.296 29.509 -16.877 29.181L-16.725 29.051C-15.909 28.286 -14.827 27.876 -13.708 27.875C-12.589 27.876 -11.507 28.286 -10.691 29.051C-10.253 29.462 -9.662 29.687 -9.042 29.687C-8.422 29.687 -7.831 29.463 -7.392 29.051C-6.576 28.287 -5.494 27.876 -4.375 27.875C-3.150 27.876 -2.174 28.286 -1.358 29.051C-0.918999 29.462 -0.327999 29.687 0.292 29.687C0.912001 29.687 1.503 29.462 1.941 29.051C2.757 28.286 3.839 27.876 4.959 27.875Z" fill="#0284c7"></path> <path d="M32.084 27.875C33.203 27.876 34.285 28.286 35.1 29.051C35.49 29.416 36.001 29.635 36.544 29.679L36.75 29.687V31.687C35.631 31.687 34.549 31.276 33.733 30.511C33.295 30.1 32.703 29.875 32.084 29.875C31.464 29.875 30.872 30.1 30.434 30.511C29.618 31.276 28.536 31.687 27.417 31.687C26.378 31.687 25.37 31.333 24.579 30.67L24.4 30.511C23.961 30.1 23.37 29.875 22.75 29.875C22.13 29.875 21.539 30.1 21.101 30.511C20.285 31.276 19.202 31.687 18.083 31.687C16.964 31.687 15.882 31.276 15.066 30.511C14.628 30.1 14.037 29.875 13.417 29.875C12.797 29.875 12.206 30.1 11.767 30.511C11.009 31.221 10.022 31.627 8.989 31.681L8.75 31.687V29.687C9.301 29.687 9.829 29.509 10.248 29.181L10.4 29.051C11.216 28.286 12.298 27.876 13.417 27.875C14.536 27.876 15.618 28.286 16.434 29.051C16.872 29.462 17.463 29.687 18.083 29.687C18.703 29.687 19.294 29.463 19.733 29.051C20.549 28.287 21.631 27.876 22.75 27.875C23.869 27.876 24.951 28.286 25.767 29.051C26.206 29.462 26.797 29.687 27.417 29.687C28.037 29.687 28.628 29.462 29.066 29.051C29.882 28.286 30.964 27.876 32.084 27.875Z" fill="#0284c7"></path> <path d="M59.584 27.875C60.703 27.876 61.785 28.286 62.6 29.051C62.99 29.416 63.501 29.635 64.044 29.679L64.25 29.687V31.687C63.131 31.687 62.049 31.276 61.233 30.511C60.795 30.1 60.203 29.875 59.584 29.875C58.964 29.875 58.372 30.1 57.934 30.511C57.118 31.276 56.036 31.687 54.917 31.687C53.878 31.687 52.87 31.333 52.079 30.67L51.9 30.511C51.461 30.1 50.87 29.875 50.25 29.875C49.63 29.875 49.039 30.1 48.601 30.511C47.785 31.276 46.702 31.687 45.583 31.687C44.464 31.687 43.382 31.276 42.566 30.511C42.128 30.1 41.537 29.875 40.917 29.875C40.297 29.875 39.706 30.1 39.267 30.511C38.509 31.221 37.522 31.627 36.489 31.681L36.25 31.687V29.687C36.801 29.687 37.329 29.509 37.748 29.181L37.9 29.051C38.716 28.286 39.798 27.876 40.917 27.875C42.036 27.876 43.118 28.286 43.934 29.051C44.372 29.462 44.963 29.687 45.583 29.687C46.203 29.687 46.794 29.463 47.233 29.051C48.049 28.287 49.131 27.876 50.25 27.875C51.369 27.876 52.451 28.286 53.267 29.051C53.706 29.462 54.297 29.687 54.917 29.687C55.537 29.687 56.128 29.462 56.566 29.051C57.382 28.286 58.464 27.876 59.584 27.875Z" fill="#0284c7"></path> </g> <mask id="mask1_2_1367" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-17" y="-18" width="80" height="80"> <path d="M63 -18H-17V62H63V-18Z" fill="#F2DDBB"></path> </mask> <g mask="url(#mask1_2_1367)"> <path d="M4.959 32.5C6.078 32.501 7.16 32.911 7.975 33.676C8.365 34.041 8.876 34.26 9.419 34.304L9.625 34.312V36.312C8.506 36.312 7.424 35.901 6.608 35.136C6.17 34.725 5.578 34.5 4.959 34.5C4.339 34.5 3.747 34.725 3.309 35.136C2.493 35.901 1.411 36.312 0.292 36.312C-0.747 36.312 -1.755 35.958 -2.546 35.295L-2.725 35.136C-3.164 34.725 -3.755 34.5 -4.375 34.5C-4.995 34.5 -5.586 34.725 -6.024 35.136C-6.84 35.901 -7.923 36.312 -9.042 36.312C-10.161 36.312 -11.243 35.901 -12.059 35.136C-12.497 34.725 -13.088 34.5 -13.708 34.5C-14.328 34.5 -14.919 34.725 -15.358 35.136C-16.116 35.846 -17.103 36.252 -18.136 36.306L-18.375 36.312V34.312C-17.824 34.312 -17.296 34.134 -16.877 33.806L-16.725 33.676C-15.909 32.911 -14.827 32.501 -13.708 32.5C-12.589 32.501 -11.507 32.911 -10.691 33.676C-10.253 34.087 -9.662 34.312 -9.042 34.312C-8.422 34.312 -7.831 34.088 -7.392 33.676C-6.576 32.912 -5.494 32.501 -4.375 32.5C-3.150 32.501 -2.174 32.911 -1.358 33.676C-0.918999 34.087 -0.327999 34.312 0.292 34.312C0.912001 34.312 1.503 34.087 1.941 33.676C2.757 32.911 3.839 32.501 4.959 32.5Z" fill="#0284c7"></path> <path d="M32.084 32.5C33.203 32.501 34.285 32.911 35.1 33.676C35.49 34.041 36.001 34.26 36.544 34.304L36.75 34.312V36.312C35.631 36.312 34.549 35.901 33.733 35.136C33.295 34.725 32.703 34.5 32.084 34.5C31.464 34.5 30.872 34.725 30.434 35.136C29.618 35.901 28.536 36.312 27.417 36.312C26.378 36.312 25.37 35.958 24.579 35.295L24.4 35.136C23.961 34.725 23.37 34.5 22.75 34.5C22.13 34.5 21.539 34.725 21.101 35.136C20.285 35.901 19.202 36.312 18.083 36.312C16.964 36.312 15.882 35.901 15.066 35.136C14.628 34.725 14.037 34.5 13.417 34.5C12.797 34.5 12.206 34.725 11.767 35.136C11.009 35.846 10.022 36.252 8.989 36.306L8.75 36.312V34.312C9.301 34.312 9.829 34.134 10.248 33.806L10.4 33.676C11.216 32.911 12.298 32.501 13.417 32.5C14.536 32.501 15.618 32.911 16.434 33.676C16.872 34.087 17.463 34.312 18.083 34.312C18.703 34.312 19.294 34.088 19.733 33.676C20.549 32.912 21.631 32.501 22.75 32.5C23.869 32.501 24.951 32.911 25.767 33.676C26.206 34.087 26.797 34.312 27.417 34.312C28.037 34.312 28.628 34.087 29.066 33.676C29.882 32.911 30.964 32.501 32.084 32.5Z" fill="#0284c7"></path> <path d="M59.584 32.5C60.703 32.501 61.785 32.911 62.6 33.676C62.99 34.041 63.501 34.26 64.044 34.304L64.25 34.312V36.312C63.131 36.312 62.049 35.901 61.233 35.136C60.795 34.725 60.203 34.5 59.584 34.5C58.964 34.5 58.372 34.725 57.934 35.136C57.118 35.901 56.036 36.312 54.917 36.312C53.878 36.312 52.87 35.958 52.079 35.295L51.9 35.136C51.461 34.725 50.87 34.5 50.25 34.5C49.63 34.5 49.039 34.725 48.601 35.136C47.785 35.901 46.702 36.312 45.583 36.312C44.464 36.312 43.382 35.901 42.566 35.136C42.128 34.725 41.537 34.5 40.917 34.5C40.297 34.5 39.706 34.725 39.267 35.136C38.509 35.846 37.522 36.252 36.489 36.306L36.25 36.312V34.312C36.801 34.312 37.329 34.134 37.748 33.806L37.9 33.676C38.716 32.911 39.798 32.501 40.917 32.5C42.036 32.501 43.118 32.911 43.934 33.676C44.372 34.087 44.963 34.312 45.583 34.312C46.203 34.312 46.794 34.088 47.233 33.676C48.049 32.912 49.131 32.501 50.25 32.5C51.369 32.501 52.451 32.911 53.267 33.676C53.706 34.087 54.297 34.312 54.917 34.312C55.537 34.312 56.128 34.087 56.566 33.676C57.382 32.911 58.464 32.501 59.584 32.5Z" fill="#0284c7"></path> </g> </g> <defs> <clipPath id="clip0_2_1367"> <rect width="45" height="45" fill="white"></rect> </clipPath> </defs> </g></svg>
+                          </div>                              
+                          <div class="card-back-2">
+                            <h3 class="text-blue-600 font-bold text-xl">Lake Palace Website</h3>
+                             <p>This project features a responsive hotel website for Lake Palace. It includes interactive elements, an elegant UI, a booking form, and a photo gallery to showcase the hotel's luxurious amenities and services. </p>
+                             <div class="hidden md:block mt-2">
+                                <div class="mb-2 flex justify-between items-center">
+                                  <h3 class="text-sm font-semibold text-black dark:text-white">JavaScript</h3>
+                                  <span class="text-sm text-black dark:text-white">0.4%</span>
+                                </div>
+                                <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 0.4%"></div>
+                                </div>
+                              </div>
+                              <div class="hidden md:block mt-2">
+                                 <div class="mb-2 flex justify-between items-center">
+                                   <h3 class="text-sm font-semibold text-black dark:text-white">HTML</h3>
+                                   <span class="text-sm text-black dark:text-white">78.1%</span>
+                                 </div>
+                                 <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                   <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 78.1%"></div>
+                                 </div>
+                               </div>
+                               <div class="hidden md:block mt-2">
+                                 <div class="mb-2 flex justify-between items-center">
+                                   <h3 class="text-sm font-semibold text-black dark:text-white">CSS</h3>
+                                   <span class="text-sm text-black dark:text-white">21.5%</span>
+                                 </div>
+                                 <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                   <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 21.5%"></div>
+                                 </div>
+                               </div>
+                               <div class="flex justify-center items-center">
+                                <button class="bg-sky-600 border rounded-full border-none p-2 m-3 flex justify-center items-center"><a href="https://github.com/singhsamiksha/LakePalace" target="_blank">Code 🔗</a></button>
+                               </div>
+                              
+                          </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="card flex justify-center items-center">
+                        <div class="card-inner-2">
+                          <div class="card-front bg-gray-200 dark:bg-customGray flex justify-center items-center  p-5">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="150px" height="150px" viewBox="0 0 400 400.00001" id="svg23475" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="task.svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs id="defs23477"></defs> <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.35" inkscape:cx="375" inkscape:cy="520" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" units="px" inkscape:window-width="1920" inkscape:window-height="1056" inkscape:window-x="1920" inkscape:window-y="24" inkscape:window-maximized="1"></sodipodi:namedview> <metadata id="metadata23480"> <rdf:rdf> <cc:work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type> <dc:title> </dc:title> </cc:work> </rdf:rdf> </metadata> <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-652.36216)"> <path inkscape:connector-curvature="0" style="opacity:1;fill:#0284c7;fill-opacity:1;stroke:none;stroke-width:25;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 162.2617,652.15012 0,28.6992 -27.7617,0.01 0,-28.7051 -25,0 0,28.707 -27,0 0,-0.043 -25,0 0,0.043 0,25 0,45 0,25 0,251.71298 0,25 25,0 235,0 23.2148,0 1.7852,0 0,-171.57038 0,-200.1855 -51.2383,0.01 0,-28.6777 -25,0 0,28.6816 -27.7617,0.01 0,-28.6875 -25,0 0,28.6914 -26.2383,0 0,-28.6953 -25,0 z M 82.5,705.86491 l 27,0 0,21.2872 25,0 0,-21.2872 27.7617,0 0,21.2872 25,0 0,-21.2872 26.2383,0 0,21.2872 25,0 0,-21.2872 27.7617,0 0,21.2872 25,0 0,-21.2872 26.2383,0 0,45 -235,0 0,-45 z m 0,70 235,0 0,112.1426 0,139.57039 -235,0 0,-251.71299 z m 25.4551,30.252 0,25 30.6074,0 0,-25 -30.6074,0 z m 55.6074,0 0,25 127.5332,0 0,-25 -127.5332,0 z m -55.6074,58 0,25 30.6074,0 0,-25 -30.6074,0 z m 55.6074,0 0,25 127.4883,0 0,-25 -127.4883,0 z m -55.6074,58 0,25 30.6074,0 0,-25 -30.6074,0 z m 55.6074,0 0,25 127.082,0 0,-25 -127.082,0 z m -55.6074,56 0,25.00009 30.6074,0 0,-25.00009 -30.6074,0 z m 55.6074,0 0,25.00009 127.5078,0 0,-25.00009 -127.5078,0 z" id="task"> <title id="title23459">task</title> </path> </g> </g></svg>  
+                        </div>                              
+                          <div class="card-back-2">
+                             <h3 class="text-blue-600 font-bold">TODO Application</h3>
+                             <p>This project is a user-friendly To-Do application built with HTML, CSS, and JavaScript. It allows users to add, edit, and delete tasks. The app features a clean and intuitive interface, making task management simple and efficient. </p>
+                             <div class="hidden md:block mt-2">
+                                <div class="mb-2 flex justify-between items-center">
+                                  <h3 class="text-sm font-semibold text-black dark:text-white">JavaScript</h3>
+                                  <span class="text-sm text-black dark:text-white">37.3%</span>
+                                </div>
+                                <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 37.3%"></div>
+                                </div>
+                              </div>
+                              <div class="hidden md:block mt-2">
+                                 <div class="mb-2 flex justify-between items-center">
+                                   <h3 class="text-sm font-semibold text-black dark:text-white">HTML</h3>
+                                   <span class="text-sm text-black dark:text-white">20.1%</span>
+                                 </div>
+                                 <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                   <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 20.1%"></div>
+                                 </div>
+                               </div>
+                               <div class="hidden md:block mt-2">
+                                 <div class="mb-2 flex justify-between items-center">
+                                   <h3 class="text-sm font-semibold text-black dark:text-white">CSS</h3>
+                                   <span class="text-sm text-black dark:text-white">42.6%</span>
+                                 </div>
+                                 <div class="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                   <div class="flex flex-col justify-center rounded-full overflow-hidden bg-sky-600 text-xs text-white text-center whitespace-nowrap transition duration-500" style="width: 42.6%"></div>
+                                 </div>
+                               </div>
+                              <div class="flex justify-center items-center">
+                                <button class="bg-sky-600 border rounded-full border-none p-2 m-3 flex justify-center items-center"><a href="https://github.com/singhsamiksha/Frontend-TODO" target="_blank">Code 🔗</a></button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+              </div>
+        </section>
+
+        <!-- Contact Me section for user inquiries -->
+        <section id="contact" class="bg-white dark:bg-black m-6 p-10 md:m-12 md:p-20 shadow-xl rounded-xl dark:shadow-gray-900">
+            <h2 class="font-bold text-2xl md:text-5xl text-sky-600 m-4 p-2 flex justify-center">Contact Me</h2>
+            <article  class="flex justify-center items-center bg-gray-200 dark:bg-customGray p-10 border-none rounded-xl">
+                <form>
+                    <div class="p-2 m-4 flex flex-col justify-center items-center">
+                        <input type="text" placeholder="First Name" name="firstName" class="w-21 sm:w-42 h-8 p-6 m-3 lg:w-120 border-none rounded-2xl" required></input>
+                        <input type="text" placeholder="Last Name" name="lastName" class="w-21 sm:w-42 h-8 p-6 m-3 lg:w-120 border-none rounded-2xl" required></input>
+                    </div>
+                    <div class="p-2 m-4 flex flex-col justify-center items-center">
+                        <input type="email" placeholder="Email Address" name="email" class="w-21 sm:w-42 h-8 p-6 m-3 lg:w-120 border-none rounded-2xl" required></input>
+                        <input type="number" placeholder="Phone Number" name="Number" class="w-21 sm:w-42 h-8 p-6 m-3 lg:w-120 border-none rounded-2xl" required></input>
+                    </div>
+                    <div class="p-2 m-4 flex-col justify-center items-center">
+                        <input type="text" placeholder="Comment here..." name="email" class="w-21 sm:w-42 h-80 p-6 m-3 lg:w-120 border-none rounded-2xl" required>                    
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <button id="submitBtn" type="submit" class="bg-sky-600 m-5 p-3 w-40 rounded-xl text-white hover:bg-green-600 hover:scale-105 transition duration-300 ease-in-out">Submit</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <!-- Theme toggle button for switching between light and dark modes -->
+        <button id="theme-toggle" class="fixed left-5 bottom-20 border-black border-4 rounded-full"><svg fill="#ffffff" width="64px" height="64px" viewBox="-9.8 -9.8 54.60 54.60" data-name="Layer 2" id="Layer_2" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-9.8" y="-9.8" width="54.60" height="54.60" rx="27.3" fill="#141414" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M18.44,34.68a18.22,18.22,0,0,1-2.94-.24,18.18,18.18,0,0,1-15-20.86A18.06,18.06,0,0,1,9.59.63,2.42,2.42,0,0,1,12.2.79a2.39,2.39,0,0,1,1,2.41L11.9,3.1l1.23.22A15.66,15.66,0,0,0,23.34,21h0a15.82,15.82,0,0,0,8.47.53A2.44,2.44,0,0,1,34.47,25,18.18,18.18,0,0,1,18.44,34.68ZM10.67,2.89a15.67,15.67,0,0,0-5,22.77A15.66,15.66,0,0,0,32.18,24a18.49,18.49,0,0,1-9.65-.64A18.18,18.18,0,0,1,10.67,2.89Z"></path></g></svg></button>
+    </main>
+
+    <!-- Footer section containing copyright and social media links -->
+    <footer class="bg-white dark:bg-black p-8 flex flex-col md:flex-row justify-between">
+        <span class="text-sky-600 dark:text-white md:text-lg">© 2024 Samiksha Portfolio, All rights reserved.</span>
+        <ul class="flex justify-center items-center gap-5">
+            <li class="m-2 hover:scale-110 transition-transform duration-200"><address><a href="mailto:singhsamiksha877@gmail.com"><i class="fas fa-envelope" style='font-size:25px; color:#0284c7'></i></a></address></li>
+            <li class="m-2 hover:scale-110 transition-transform duration-200"><a href="https://github.com/singhsamiksha" target="_blank"><i class="fab fa-github" style='font-size:25px; color:#0284c7'></i></a></li>
+            <li class="m-2 hover:scale-110 transition-transform duration-200"><a href="https://x.com/Samiksha7337833" target="_blank"><i class="fab fa-twitter" style='font-size:25px; color:#0284c7'></i></a></li>
+            <li class="m-2 hover:scale-110 transition-transform duration-200"><a href="https://www.linkedin.com/in/samiksha-1099691ab/" target="_blank"><i class="fab fa-linkedin" style='font-size:25px; color:#0284c7'></i></a></li>
+        </ul>
+    </footer>
+    
+    <script>
+        // Toggle visibility of additional text when button is clicked
+        document.getElementById("read-more-btn").addEventListener("click", function() {
+            var moreText = document.getElementById("more-text");
+            var btnText = document.getElementById("read-more-btn");
+    
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                btnText.textContent = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.textContent = "Read More";
+            }
+        });
+
+        // Toggle dark mode class on body and card elements
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            
+            // Optionally toggle dark class on other elements
+            document.querySelectorAll('.card-back').forEach(card => {
+                card.classList.toggle('dark');
+            });
+
+            document.querySelectorAll('.card-back-2').forEach(card => {
+                card.classList.toggle('dark');
+            });
+        });
+    </script>
+
+
+</body>
+</html>
